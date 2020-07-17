@@ -1,0 +1,35 @@
+#开发环境配置
+spring:
+  #据源配置
+  datasource:
+    name: test
+    url: jdbc:mysql://101.132.134.161:3306/lizhen_test?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: Lizhensfroot
+
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+
+#是否激活 swagger true or false
+swagger:
+  enable: true
+
+
+
+
+
+#线程池配置
+#核心线程池大小
+#async:
+#  pool:
+#    corePoolSize: 20
+#    #最大线程数
+#    maxPoolSize: 40
+#    #活跃时间
+#    keepAliveSeconds: 300
+#    #队列容量
+#    queueCapacity: 50000
+#    prefix: taskExecutor--
+#    isWait: true
+#    waitSeconds: 60
